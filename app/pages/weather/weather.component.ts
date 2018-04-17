@@ -97,8 +97,9 @@ export class WeatherComponent implements OnInit {
 		})
 	}
 
-	public calculateSummary(data) {
-		return parseFloat(data) * 100;
+	public calculateSummary(data) {		
+		let numero = parseFloat(data) * 100;
+		return  numero.toFixed(1);
 	}
 
 

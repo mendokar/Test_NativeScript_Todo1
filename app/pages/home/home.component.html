@@ -3,10 +3,10 @@
 </ActionBar>
 <ScrollView>
     <StackLayout class="page">
-        <Label class="title" text="Invierte la posicion de la palabra" textWrap="true"></Label>
+        <Label class="title" text="Invierte la posición de la palabra" textWrap="true"></Label>
         <Label class="sub-title" text="Ingresa una palabra" textWrap="true"></Label>
         <TextField hint="" [(ngModel)]="_dato._word" [text]="_dato._word"></TextField>
         <Button class="btn" text="Validar palabra" (tap)="changePositionString()"></Button>
-        <Label *ngIf="_viewResponse" class="title" text="El resultado de la conversion en la palabra fue : {{_newCadena}}" textWrap="true"></Label>
+        <Label *ngIf="_viewResponse" class="title" text="El resultado de la conversión en la palabra fue : {{_newCadena}}" textWrap="true"></Label>
     </StackLayout>
 </ScrollView>
