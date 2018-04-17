@@ -1,0 +1,77 @@
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .page {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 2s;
+  }
+
+
+*{
+    color: white;
+}
+
+.refresh{
+    height: 40;
+    width: 40;
+    margin: 10;
+}
+
+.title{
+    vertical-align: center;
+    font-size: 25;
+    margin-left: -60;
+    margin-right: -20;
+}
+
+.img{
+    margin-left:-60; 
+}
+
+.number{
+    font-size: 60;
+    margin-right: -20;
+}
+
+.grades{
+    font-size: 20;
+    vertical-align: top;
+    margin-right: 120;
+}
+
+.bottom{
+    vertical-align: center;
+    font-size: 25;
+}

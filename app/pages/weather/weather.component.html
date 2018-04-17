@@ -1,0 +1,21 @@
+<StackLayout class="page">
+    <Gradient direction="to right" colors="#4ca1af,#c4e0e5" height="100%" width="100%" style="vertical-align: center;">
+        <Image [@menuState]="_rotateImage" class="refresh" src="~/images/refresh.png" (tap)="reloadData()"></Image>
+        <GridLayout rows="*" columns="*,*" height="80" horizontalAlignment="center" width="100%">
+            <Image class="img" row="0" col="0" src="~/images/circle.png" height="40" width="40"></Image>
+            <Label horizontalAlignment="left" row="0" col="1" class="title" [text]="timeZone" textWrap="true"></Label>
+        </GridLayout>
+        <GridLayout rows="*" columns="*,*" height="100" horizontalAlignment="center" width="100%">
+            <Label horizontalAlignment="right" class="number" row="0" col="0" [text]="precipProbability" textWrap="true"></Label>
+            <Label horizontalAlignment="center" class="grades" row="0" col="1" text="o" textWrap="true"></Label>
+        </GridLayout>
+        <GridLayout rows="*,*" columns="*,*" height="100"  horizontalAlignment="center" width="100%">
+            <Label horizontalAlignment="center" row="0" col="0" text="HUMIDITY" textWrap="true"></Label>
+            <Label horizontalAlignment="center" row="1" col="0" [text]="humidity" textWrap="true"></Label>
+            <Label horizontalAlignment="center" row="0" col="1" text="RAIN" textWrap="true"></Label>
+            <Label horizontalAlignment="center"row="1" col="1" [text]="temperature" textWrap="true"></Label>
+        </GridLayout>
+        <Label horizontalAlignment="center" class="bottom" text="Summary" textWrap="true"></Label>
+       
+    </Gradient>
+</StackLayout>
